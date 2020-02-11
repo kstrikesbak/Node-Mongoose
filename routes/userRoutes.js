@@ -9,10 +9,10 @@ const {
     deleteProfile
 } = require('../controllers/userController');
 
-router.get('/getAllUsers', getAllUsers);
+router.get('/', getAllUsers);
 router.post('/register', register);
 router.post('/login', login);
-router.put('/update/:id', updateProfile);
-router.delete('/delete/:id', deleteProfile);
+router.put('/updateProfile/:id', updateProfile);
+router.delete('/deleteProfile/:id', deleteProfile);
 
 module.exports = router;
