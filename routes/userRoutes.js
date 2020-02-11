@@ -12,7 +12,7 @@ const {
 router.get('/', getAllUsers);
 router.post('/register', register);
 router.post('/login', login);
-router.put('/updateProfile/:id', updateProfile);
-router.delete('/deleteProfile/:id', deleteProfile);
+router.put('/updateprofile/:id', updateProfile);
+router.delete('/deleteprofile/:id', deleteProfile);
 
 module.exports = router;
